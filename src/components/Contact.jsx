@@ -6,11 +6,11 @@ export default function Contact() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <p className="text-xl font-semibold">📍 Address</p>
-            <p>123 Street, City, Country</p>
+            <p>Muradpur, Chattogram, Bangladesh.</p>
           </div>
           <div>
             <p className="text-xl font-semibold">📧 Email</p>
-            <p>info@example.com</p>
+            <p>officialvromon@gmail.com</p>
           </div>
           <div>
             <p className="text-xl font-semibold">📞 Phone</p>
