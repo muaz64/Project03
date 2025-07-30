@@ -1,3 +1,11 @@
 @import "tailwindcss";
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom grayscale hover effect */
+.grayscale-filter {
+  @apply filter grayscale hover:grayscale-0 transition duration-300;
+}
