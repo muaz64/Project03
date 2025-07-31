@@ -21,23 +21,33 @@ const destinations = [
 
 export default function Destinations() {
   return (
-    <section id="dd" className="py-16 bg-gray-900 text-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10">Popular Destinations</h2>
-        <div className="space-y-8">
+    <section id="dd" className="py-16 bg-gray-950 text-white ">
+      <div className="container mx-auto px-4 m-10">
+        <h2 className="text-4xl font-bold text-center mb-12 text-cyan-300">
+          Popular Destinations
+        </h2>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {destinations.map((dest, index) => (
             <div
               key={index}
-              className="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-[1.02] transition"
+              className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
-              <img src={dest.img} alt={dest.title} className="w-full h-64 object-cover" />
+              <img
+                src={dest.img}
+                alt={dest.title}
+                className="w-full h-56 object-cover group-hover:scale-105 transition duration-300"
+              />
               <div className="p-6">
-                <h3 className="text-2xl font-semibold">{dest.title}</h3>
-                <p className="text-gray-300 mb-4">{dest.text}</p>
+                <h3 className="text-xl font-semibold mb-1 text-cyan-200">{dest.title}</h3>
+                <p className="text-gray-400 mb-4">{dest.text}</p>
                 <a
                   href={dest.link}
                   target="_blank"
-                  className="inline-block px-4 py-2 border border-cyan-400 text-cyan-300 rounded hover:bg-cyan-400 hover:text-black transition"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 border border-cyan-500 text-cyan-300 rounded-lg hover:bg-cyan-400 hover:text-black transition"
                 >
                   Learn More
                 </a>
