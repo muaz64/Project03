@@ -6,12 +6,15 @@ export default function Hero() {
       style={{ backgroundImage: "url('/img/background1.jpg')" }}
     >
       <div className="bg-black/50 absolute inset-0"></div>
-      <div className="relative z-10 text-cyan-300">
+      <div
+        className="relative z-10 text-cyan-300"
+        data-aos="fade-up"
+      >
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Welcome to our Vromon
+          Welcome to <span className="text-cyan-400">Vromon</span>
         </h1>
         <p className="text-xl md:text-2xl mb-6">
-          Discover amazing destinations and book your dream vacation today!
+           Discover the World with <span className="text-cyan-400">Vromon</span>
         </p>
         <a
           href="#dd"
@@ -23,3 +26,4 @@ export default function Hero() {
     </section>
   );
 }
+

@@ -13,7 +13,7 @@ export default function AboutUs() {
           That's why we handpick unique destinations, local stories, and travel guides to help you explore more 
           deeply and responsibly.
         </p>
-        <p className="text-lg">
+        <p className="text-lg font-bold">
           Join the Vromon journey today — and let's uncover the hidden gems of the world, one corner at a time.
         </p>
       </div>
